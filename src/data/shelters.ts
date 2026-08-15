@@ -1,0 +1,58 @@
+import type { Shelter } from '../types';
+
+export const shelters: Record<string, Shelter[]> = {
+  jaipur: [
+    { id: 'j-sh1', name: 'Emergency Shelter 01', type: 'shelter', lat: 26.9124, lng: 75.8050, capacity: 450, occupants: 120, status: 'Available', distanceKm: 1.8 },
+    { id: 'j-sh2', name: 'Relief Camp Mansarovar', type: 'shelter', lat: 26.9050, lng: 75.7650, capacity: 600, occupants: 480, status: 'Limited', distanceKm: 2.4 },
+    { id: 'j-h1', name: 'SMS Hospital', type: 'hospital', lat: 26.9180, lng: 75.7900, capacity: 1200, occupants: 800, status: 'Limited', distanceKm: 0.9 },
+    { id: 'j-h2', name: 'Fortis Escorts', type: 'hospital', lat: 26.8950, lng: 75.8200, capacity: 350, occupants: 150, status: 'Available', distanceKm: 3.2 },
+    { id: 'j-sc1', name: 'Maharani School', type: 'school', lat: 26.9200, lng: 75.7700, capacity: 800, occupants: 300, status: 'Available', distanceKm: 1.5 },
+    { id: 'j-r1', name: 'NH-48 Junction', type: 'road', lat: 26.9100, lng: 75.8300, capacity: 0, occupants: 0, status: 'Available', distanceKm: 4.1 },
+    { id: 'j-r2', name: 'Tonk Road Crossing', type: 'road', lat: 26.8980, lng: 75.8000, capacity: 0, occupants: 0, status: 'Available', distanceKm: 2.0 },
+  ],
+  mumbai: [
+    { id: 'm-sh1', name: 'Andheri Relief Center', type: 'shelter', lat: 19.076, lng: 72.8900, capacity: 800, occupants: 650, status: 'Limited', distanceKm: 1.2 },
+    { id: 'm-sh2', name: 'Dharavi Shelter', type: 'shelter', lat: 19.0400, lng: 72.8500, capacity: 1200, occupants: 1100, status: 'Full', distanceKm: 2.8 },
+    { id: 'm-h1', name: 'Lilavati Hospital', type: 'hospital', lat: 19.0900, lng: 72.8600, capacity: 500, occupants: 420, status: 'Limited', distanceKm: 1.5 },
+    { id: 'm-h2', name: 'KEM Hospital', type: 'hospital', lat: 19.0200, lng: 72.8500, capacity: 1800, occupants: 1500, status: 'Limited', distanceKm: 3.4 },
+    { id: 'm-sc1', name: 'IIT Bombay Campus', type: 'school', lat: 19.1300, lng: 72.9100, capacity: 2000, occupants: 600, status: 'Available', distanceKm: 5.2 },
+    { id: 'm-r1', name: 'Western Express Highway', type: 'road', lat: 19.1000, lng: 72.8800, capacity: 0, occupants: 0, status: 'Available', distanceKm: 1.9 },
+    { id: 'm-r2', name: 'Sion-Panvel Junction', type: 'road', lat: 19.0500, lng: 72.8700, capacity: 0, occupants: 0, status: 'Available', distanceKm: 2.6 },
+  ],
+  guwahati: [
+    { id: 'g-sh1', name: 'Brahmaputra Relief Camp', type: 'shelter', lat: 26.1445, lng: 91.7500, capacity: 500, occupants: 350, status: 'Limited', distanceKm: 1.1 },
+    { id: 'g-sh2', name: 'Dispur Shelter', type: 'shelter', lat: 26.1500, lng: 91.7200, capacity: 400, occupants: 120, status: 'Available', distanceKm: 1.6 },
+    { id: 'g-h1', name: 'Guwahati Medical College', type: 'hospital', lat: 26.1600, lng: 91.7400, capacity: 900, occupants: 600, status: 'Limited', distanceKm: 1.3 },
+    { id: 'g-h2', name: 'Nemcare Hospital', type: 'hospital', lat: 26.1300, lng: 91.7600, capacity: 300, occupants: 100, status: 'Available', distanceKm: 2.0 },
+    { id: 'g-sc1', name: 'Cotton University', type: 'school', lat: 26.1700, lng: 91.7300, capacity: 1000, occupants: 200, status: 'Available', distanceKm: 2.8 },
+    { id: 'g-r1', name: 'NH-17 crossing', type: 'road', lat: 26.1400, lng: 91.7800, capacity: 0, occupants: 0, status: 'Available', distanceKm: 3.1 },
+    { id: 'g-r2', name: 'GS Road Junction', type: 'road', lat: 26.1550, lng: 91.7500, capacity: 0, occupants: 0, status: 'Available', distanceKm: 1.4 },
+  ],
+  chennai: [
+    { id: 'c-sh1', name: 'T Nagar Relief Center', type: 'shelter', lat: 13.0827, lng: 80.2300, capacity: 700, occupants: 550, status: 'Limited', distanceKm: 2.2 },
+    { id: 'c-sh2', name: 'Adyar Shelter', type: 'shelter', lat: 13.0000, lng: 80.2600, capacity: 500, occupants: 150, status: 'Available', distanceKm: 3.5 },
+    { id: 'c-h1', name: 'Apollo Hospitals', type: 'hospital', lat: 13.0600, lng: 80.2500, capacity: 600, occupants: 480, status: 'Limited', distanceKm: 1.8 },
+    { id: 'c-h2', name: 'Government General Hospital', type: 'hospital', lat: 13.0800, lng: 80.2700, capacity: 2000, occupants: 1600, status: 'Full', distanceKm: 0.8 },
+    { id: 'c-sc1', name: 'Anna University', type: 'school', lat: 13.0100, lng: 80.2400, capacity: 1500, occupants: 300, status: 'Available', distanceKm: 4.2 },
+    { id: 'c-r1', name: 'Anna Salai Junction', type: 'road', lat: 13.0600, lng: 80.2500, capacity: 0, occupants: 0, status: 'Available', distanceKm: 1.6 },
+    { id: 'c-r2', name: 'ECR Road Junction', type: 'road', lat: 12.9500, lng: 80.2500, capacity: 0, occupants: 0, status: 'Available', distanceKm: 5.0 },
+  ],
+  patna: [
+    { id: 'p-sh1', name: 'Ganga Relief Camp', type: 'shelter', lat: 25.5941, lng: 85.1500, capacity: 600, occupants: 580, status: 'Full', distanceKm: 1.0 },
+    { id: 'p-sh2', name: 'Patna City Shelter', type: 'shelter', lat: 25.5800, lng: 85.1200, capacity: 450, occupants: 200, status: 'Available', distanceKm: 2.5 },
+    { id: 'p-h1', name: 'AIIMS Patna', type: 'hospital', lat: 25.6100, lng: 85.1600, capacity: 1000, occupants: 700, status: 'Limited', distanceKm: 1.7 },
+    { id: 'p-h2', name: 'Patna Medical College', type: 'hospital', lat: 25.6100, lng: 85.1300, capacity: 1200, occupants: 1000, status: 'Full', distanceKm: 1.4 },
+    { id: 'p-sc1', name: 'Patna University', type: 'school', lat: 25.6000, lng: 85.1400, capacity: 1200, occupants: 250, status: 'Available', distanceKm: 0.9 },
+    { id: 'p-r1', name: 'Gandhi Maidan Road', type: 'road', lat: 25.6050, lng: 85.1350, capacity: 0, occupants: 0, status: 'Available', distanceKm: 1.1 },
+    { id: 'p-r2', name: 'NH-31 Junction', type: 'road', lat: 25.5800, lng: 85.1700, capacity: 0, occupants: 0, status: 'Available', distanceKm: 3.0 },
+  ],
+  kolkata: [
+    { id: 'k-sh1', name: 'Salt Lake Relief Camp', type: 'shelter', lat: 22.5726, lng: 88.3800, capacity: 900, occupants: 700, status: 'Limited', distanceKm: 1.5 },
+    { id: 'k-sh2', name: 'Howrah Shelter', type: 'shelter', lat: 22.5900, lng: 88.3400, capacity: 600, occupants: 200, status: 'Available', distanceKm: 2.8 },
+    { id: 'k-h1', name: 'AMRI Hospitals', type: 'hospital', lat: 22.5500, lng: 88.3600, capacity: 400, occupants: 320, status: 'Limited', distanceKm: 1.2 },
+    { id: 'k-h2', name: 'SSKM Hospital', type: 'hospital', lat: 22.5400, lng: 88.3400, capacity: 1500, occupants: 1200, status: 'Full', distanceKm: 2.0 },
+    { id: 'k-sc1', name: 'Jadavpur University', type: 'school', lat: 22.5000, lng: 88.3700, capacity: 1800, occupants: 400, status: 'Available', distanceKm: 4.5 },
+    { id: 'k-r1', name: 'EM Bypass Junction', type: 'road', lat: 22.5600, lng: 88.3900, capacity: 0, occupants: 0, status: 'Available', distanceKm: 1.8 },
+    { id: 'k-r2', name: 'Howrah Bridge Approach', type: 'road', lat: 22.5800, lng: 88.3500, capacity: 0, occupants: 0, status: 'Available', distanceKm: 2.2 },
+  ],
+};
